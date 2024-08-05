@@ -7,7 +7,7 @@ import StatusFilter from "./components/StatusFilter";
 import { ThemeProvider, useTheme } from "./them/ThemeProvider";
 
 function AppContent() {
-  const { theme, toggleTheme } = useTheme() || {};
+  const { theme } = useTheme() || {};
 
   const [tasks, setTasks] = useState([
     {

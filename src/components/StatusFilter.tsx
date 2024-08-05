@@ -19,7 +19,7 @@ const StatusFilter: React.FC<StatusFilterProps> = ({
   handleStatus,
   handleClearCompleted,
 }) => {
-  const { theme, toggleTheme } = useTheme() || {};
+  const { theme } = useTheme() || {};
 
   return (
     <Stack

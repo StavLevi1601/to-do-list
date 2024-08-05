@@ -102,7 +102,9 @@ function AppContent() {
   };
 
   const handleClearCompleted = () => {
-    setTasks([]);
+    setTasks((prevTasks) => {
+      return prevTasks.filter((task) => !task.completed);
+    });
   };
 
   const filteredTasks = tasks.filter((task) => {

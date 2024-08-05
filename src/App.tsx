@@ -1,6 +1,6 @@
 // src/App.tsx
 import React, { useState } from "react";
-import { Stack, Typography, Input } from "@mui/material";
+import { Stack, Input } from "@mui/material";
 import { Header } from "./components/Header";
 import TaskItem from "./components/TaskItem";
 import StatusFilter from "./components/StatusFilter";

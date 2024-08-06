@@ -3,7 +3,7 @@ import React from "react";
 import { Stack, Typography, Checkbox } from "@mui/material";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
-import { useTheme } from "../them/ThemeProvider";
+import { useTheme } from "../theme/ThemeProvider";
 
 interface TaskItemProps {
   task: {

@@ -1,13 +1,13 @@
 // src/App.tsx
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Stack, Input } from "@mui/material";
 import { Header } from "./components/Header";
 import TaskItem from "./components/TaskItem";
 import StatusFilter from "./components/StatusFilter";
-import { ThemeProvider, useTheme } from "./them/ThemeProvider";
+import { ThemeContext } from "./theme/ThemeProvider";
 
-function AppContent() {
-  const { theme } = useTheme() || {};
+export default function App() {
+  const { theme } = useContext(ThemeContext) || {};
 
   const [tasks, setTasks] = useState([
     {
@@ -184,13 +184,3 @@ function AppContent() {
     </Stack>
   );
 }
-
-const App = () => {
-  return (
-    <ThemeProvider>
-      <AppContent />
-    </ThemeProvider>
-  );
-};
-
-export default App;

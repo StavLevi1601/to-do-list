@@ -3,7 +3,7 @@ import iconMoon from "../assets/images/icon-moon.svg";
 import iconSun from "../assets/images/icon-sun.svg";
 import bgDesktopLight from "../assets/images/bg-desktop-light.jpg";
 import bgDesktopDark from "../assets/images/bg-desktop-dark.jpg";
-import { useTheme } from "../them/ThemeProvider";
+import { useTheme } from "../theme/ThemeProvider";
 
 export function Header() {
   const { theme, toggleTheme } = useTheme() || {};
